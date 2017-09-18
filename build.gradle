@@ -1,0 +1,8 @@
+group 'aarexer.scala-ex'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
