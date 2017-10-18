@@ -46,7 +46,7 @@ object Solutions {
     * scala> nth(2, List(1, 1, 2, 3, 5, 8))
     * res0: Int = 2
     */
-  def nth[A](n: Int, lst: List[A]): A = if (n >= 0) lst(n) else throw new NoSuchElementException
+  def nth[A](n: Int, lst: List[A]): A = if (n >= 0 && lst.nonEmpty) lst(n) else throw new NoSuchElementException
 
   def nth_2[A](n: Int, lst: List[A]): A = {
     (n, lst) match {
