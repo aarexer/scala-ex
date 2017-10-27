@@ -98,5 +98,4 @@ class SolutionsSpec extends FlatSpec with Matchers {
   it should "throw NoSuchElementException when index is negative" in {
     an[NoSuchElementException] should be thrownBy Solutions.nth_2(-1, List())
   }
-
 }
